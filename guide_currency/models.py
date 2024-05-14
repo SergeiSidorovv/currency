@@ -10,4 +10,3 @@ class Currency(models.Model):
         verbose_name = 'Валюта'
         verbose_name_plural = 'Валюты'
         ordering = ['id']
-        
