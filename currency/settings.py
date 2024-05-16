@@ -29,7 +29,14 @@ SECRET_KEY = "django-insecure-pe9w(_el2ra!&+=21&xq3kaoj@0%+)3()(9g_fitizgo1d)i4$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1"
+]
+INTERNAL_IPS = [
+    "localhost",
+    "127.0.0.1"
+]
 
 
 # Application definition
@@ -43,10 +50,12 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "guide_currency.apps.GuideCurrencyConfig",
     "exchange_rates.apps.ExchangeRatesConfig",
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
