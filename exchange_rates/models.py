@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class ExchangeRatesModels(models.Model):
+class ExchangeRates(models.Model):
     currency = models.ForeignKey(
         "guide_currency.Currency", on_delete=models.RESTRICT, verbose_name="id_валюты")
     date = models.DateField(verbose_name="дата")
