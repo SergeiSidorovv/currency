@@ -4,6 +4,7 @@ from exchange_rates.models import ExchangeRates
 
 
 class ExchangeRatesAdmin(admin.ModelAdmin):
+    """The administrator model for interacting with the ExchangeRates table in the database."""
 
     list_display = ["id", "currency", "date", "value"]
     fields = ["currency", "date", "value"]

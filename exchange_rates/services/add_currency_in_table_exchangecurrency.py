@@ -5,6 +5,12 @@ from exchange_rates.services import get_date_for_model
 
 
 def add_exchange_currency(data_for_currency: dict):
+    """
+    Adds currency exchange rate data to the ExchangeRates table of the database.
+
+    Keyword argument:
+    data_for_currency -- data with all currency information.
+    """
 
     valute_data = data_for_currency['Valute'].items()
     date_str_for_model = get_date_for_model.get_date_for_model(

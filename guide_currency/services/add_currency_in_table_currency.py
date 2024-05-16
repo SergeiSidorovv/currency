@@ -5,9 +5,8 @@ def add_currency_in_table_currency(data_for_currency: dict):
     """
     Adds data with the name of the currency and its char_code to the Currency table.
 
-    Keyword arguments::
-    data_for_currency -- Currency data obtained from the website: \
-    https://www.cbr-xml-daily.ru/daily_json.js and converted to dictionary.
+    Keyword arguments:
+    data_for_currency -- currency data to be added to the Currency table in the database.
     """
 
     valute_data = data_for_currency["Valute"].items()
