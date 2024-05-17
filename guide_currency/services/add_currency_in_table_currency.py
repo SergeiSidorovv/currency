@@ -1,7 +1,7 @@
 from guide_currency.models import Currency
 
 
-def add_currency_in_table_currency(data_for_currency: dict):
+def add_or_update_currency_in_table_currency(data_for_currency: dict):
     """
     Adds data with the name of the currency and its char_code to the Currency table.
 

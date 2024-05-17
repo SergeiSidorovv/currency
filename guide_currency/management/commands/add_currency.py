@@ -13,7 +13,7 @@ class Command(BaseCommand):
         """Save or updates data in the Currency and ExchangeRates tables of the database."""
 
         data_currency = get_currency.get_currency()
-        add_currency_in_table_currency.add_currency_in_table_currency(
+        add_currency_in_table_currency.add_or_update_currency_in_table_currency(
             data_currency)
         add_currency_in_table_exchangecurrency.add_exchange_currency(
             data_currency)
